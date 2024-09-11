@@ -4,45 +4,46 @@ export const cardsData = [
   {
     title: "Revenue",
     change: 24,
-    amount: 42056,
+    amount: 43101,
   },
   {
     title: "Orders",
-    change: -14,
-    amount: 52125.03,
+    change: 14,
+    amount: 70201,
   },
   {
     title: "Expenses",
     change: 18,
-    amount: 1216.5,
+    amount: 15000.2,
   },
   {
     title: "Profit",
     change: 12,
-    amount: 10125.0,
+    amount: 62091.87,
   },
 ];
 
 export const ordersData = [
   {
-    name: "Skatebnoard",
-    type: "Illustration",
-    items: 58,
-    change: 290,
+    name: "MacBook Pro",
+    type: "Electronics",
+    items: 45,
+    change: 15,
   },
   {
-    name: "Language courses",
-    type: "Illustration",
-    items: 12,
-    change: 72
+    name: "Nike Air Max",
+    type: "Footwear",
+    items: 120,
+    change: 60,
   },
   {
-    name: "Office Collaboration",
-    type: "Illustration",
-    items: 7,
-    change: 70
+    name: "Ergonomic Office Chair",
+    type: "Furniture",
+    items: 30,
+    change: 10,
   },
-]
+];
+
 
 
 //* get the value in group number format
@@ -59,34 +60,33 @@ let todayStr = moment().format("YYYY-MM-DD")  // YYYY-MM-DD of today
 export const INITIAL_EVENTS = [
   {
     id: createEventId(),
-    title: 'Lunch Pary',
+    title: 'Project Kickoff',
     start: todayStr + 'T09:00:00',
-
   },
   {
     id: createEventId(),
-    title: 'Timed event',
-    start: moment(todayStr).add(1, "days").format("YYYY-MM-DD") + 'T16:00:00'
+    title: 'Client PPT',
+    start: moment(todayStr).add(1, "days").format("YYYY-MM-DD") + 'T16:00:00',
   },
   {
     id: createEventId(),
-    title: "Head Meetup",
-    start: moment(todayStr).add(2, "days").format("YYYY-MM-DD") + 'T20:00:00'
+    title: "Brainstorming",
+    start: moment(todayStr).add(2, "days").format("YYYY-MM-DD") + 'T20:00:00',
   },
   {
     id: createEventId(),
-    title: "VC Meeting",
-    start: moment(todayStr).add(3, "days").format("YYYY-MM-DD") + 'T09:00:00'
+    title: "Investor Call",
+    start: moment(todayStr).add(3, "days").format("YYYY-MM-DD") + 'T09:00:00',
   },
   {
     id: createEventId(),
-    title: "Payment Shedules",
-    start: moment(todayStr).add(5, "days").format("YYYY-MM-DD") + 'T13:00:00'
+    title: "Budget Review",
+    start: moment(todayStr).add(5, "days").format("YYYY-MM-DD") + 'T13:00:00',
   },
   {
     id: createEventId(),
-    title: "VC Meeting",
-    start: moment(todayStr).add(6, "days").format("YYYY-MM-DD") + 'T13:00:00'
+    title: "Team Retrospective",
+    start: moment(todayStr).add(6, "days").format("YYYY-MM-DD") + 'T13:00:00',
   },
 ]
 
@@ -104,13 +104,13 @@ export const boardData = {
       cards: [
         {
           id: 1,
-          title: "Database Setup",
-          description: "Firebase Integration"
+          title: "API Documentation",
+          description: "Create Swagger documentation for the REST API"
         },
         {
           id: 2,
-          title: "Data Flow",
-          description: "Setup Diagram with other developers"
+          title: "UI Design",
+          description: "Design mockups for the new user dashboard"
         },
       ]
     },
@@ -120,8 +120,8 @@ export const boardData = {
       cards: [
         {
           id: 9,
-          title: "Data Table Page",
-          description: "Server side Pagination",
+          title: "Authentication Module",
+          description: "Implement JWT-based authentication system",
         }
       ]
     },
@@ -131,13 +131,13 @@ export const boardData = {
       cards: [
         {
           id: 10,
-          title: "Full Calendar Extension",
-          description: "Make new events and store in global states"
+          title: "Performance Optimization",
+          description: "Optimize the React components to reduce re-rendering"
         },
         {
           id: 11,
-          title: "Custom Kanban Board",
-          description: "Setup react-kanban dep within Dashboard as seperate page"
+          title: "Payment Gateway Integration",
+          description: "Integrate Razorpay for processing online transactions"
         }
       ]
     },
@@ -147,13 +147,13 @@ export const boardData = {
       cards: [
         {
           id: 12,
-          title: "Vite Server Setup",
-          description: "Configure required modules and starters"
+          title: "User Registration Flow",
+          description: "Completed user registration and email verification process"
         },
         {
           id: 13,
-          title: "Modular structre",
-          description: "Write css in form of modules to reduce the naming conflicts"
+          title: "Dark Mode Feature",
+          description: "Implemented theme toggle between light and dark modes"
         }
       ]
     }
@@ -165,82 +165,83 @@ export const boardData = {
 export const userData = [
   {
     name: {
-      firstName: 'John',
-      lastName: 'Doe',
+      firstName: 'Amit',
+      lastName: 'Sharma',
     },
-    address: '261 Erdman Ford',
-    city: 'East Daphne',
-    state: 'Kentucky',
+    address: '12 MG Road',
+    city: 'Bangalore',
+    state: 'Karnataka',
   },
   {
     name: {
-      firstName: 'Jane',
-      lastName: 'Doe',
+      firstName: 'Neha',
+      lastName: 'Verma',
     },
-    address: '769 Dominic Grove',
-    city: 'Columbus',
-    state: 'Ohio',
+    address: '54 Park Street',
+    city: 'Kolkata',
+    state: 'West Bengal',
   },
   {
     name: {
-      firstName: 'Joe',
-      lastName: 'Doe',
+      firstName: 'Raj',
+      lastName: 'Patel',
     },
-    address: '566 Brakus Inlet',
-    city: 'South Linda',
-    state: 'West Virginia',
+    address: '34 MG Road',
+    city: 'Ahmedabad',
+    state: 'Gujarat',
   },
   {
     name: {
-      firstName: 'Kevin',
-      lastName: 'Vandy',
+      firstName: 'Priya',
+      lastName: 'Singh',
     },
-    address: '722 Emie Stream',
-    city: 'Lincoln',
-    state: 'Nebraska',
+    address: '78 Sadar Bazar',
+    city: 'Lucknow',
+    state: 'Uttar Pradesh',
   },
   {
     name: {
-      firstName: 'Joshua',
-      lastName: 'Rolluffs',
+      firstName: 'Rohit',
+      lastName: 'Kumar',
     },
-    address: '32188 Larkin Turnpike',
-    city: 'Charleston',
-    state: 'South Carolina',
-  }, {
-    name: {
-      firstName: 'Jane',
-      lastName: 'Doe',
-    },
-    address: '769 Dominic Grove',
-    city: 'Columbus',
-    state: 'Ohio',
+    address: '90 Brigade Road',
+    city: 'Chennai',
+    state: 'Tamil Nadu',
   },
   {
     name: {
-      firstName: 'Joe',
-      lastName: 'Doe',
+      firstName: 'Sneha',
+      lastName: 'Rao',
     },
-    address: '566 Brakus Inlet',
-    city: 'South Linda',
-    state: 'West Virginia',
+    address: '12 Brigade Road',
+    city: 'Hyderabad',
+    state: 'Telangana',
   },
   {
     name: {
-      firstName: 'Kevin',
-      lastName: 'Vandy',
+      firstName: 'Anil',
+      lastName: 'Desai',
     },
-    address: '722 Emie Stream',
-    city: 'Lincoln',
-    state: 'Nebraska',
+    address: '77 FC Road',
+    city: 'Pune',
+    state: 'Maharashtra',
   },
   {
     name: {
-      firstName: 'Joshua',
-      lastName: 'Rolluffs',
+      firstName: 'Manish',
+      lastName: 'Mishra',
     },
-    address: '32188 Larkin Turnpike',
-    city: 'Charleston',
-    state: 'South Carolina',
+    address: '33 Civil Lines',
+    city: 'Bhopal',
+    state: 'Madhya Pradesh',
   },
-]
+  {
+    name: {
+      firstName: 'Sakshi',
+      lastName: 'Chauhan',
+    },
+    address: '22 Marine Drive',
+    city: 'Mumbai',
+    state: 'Maharashtra',
+  },
+];
